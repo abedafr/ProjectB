@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.abedev.projectb.About">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        app:srcCompat="@drawable/game_name"
+        android:id="@+id/imageView2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <TextView
+            android:text="This game is developped by Abed Afriad, \nthe beta is done at 00:40 UTC 29/10/2017, Hope you Like it #AA4649"
+            android:textAlignment="center"
+            android:textSize="7pt"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:textColor="#0076fd"
+            android:id="@+id/bio" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Follow me at:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:textSize="8pt"
+            android:layout_weight="0.13" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Twitter: "
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textSize="8pt"
+                android:textColor="#004cd9"
+                android:id="@+id/twitter"
+                android:layout_width="158dp" />
+
+            <TextView
+                android:text="@string/myTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_twitter"
+                android:textColor="#0076fd"
+                android:textAlignment="center"
+                android:textSize="8pt" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:weightSum="1"
+            android:layout_weight="0.57">
+
+            <TextView
+                android:text="GitHub: "
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textSize="8pt"
+                android:textColor="#004cd9"
+                android:id="@+id/github"
+                android:layout_weight="0.15"
+                android:layout_width="155dp" />
+
+            <TextView
+                android:text="@string/myGithub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_github"
+                android:textColor="#0076fd"
+                android:textAlignment="center"
+                android:textSize="8pt" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            app:srcCompat="@drawable/aa_dev"
+            android:id="@+id/imageView3"
+            android:layout_weight="0.17" />
+
+    </LinearLayout>
+</LinearLayout>

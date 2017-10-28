@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.abedev.projectb.StartScene">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="271dp"
+            app:srcCompat="@drawable/start_screen_pic"
+            android:id="@+id/gameName"
+            android:layout_weight="0.18" />
+
+        <TextView
+            android:text="@string/intro"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:id="@+id/intro"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:textColor="#3d8ce6"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_weight="0.70" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12"
+            android:text="@string/start_button"
+            android:onClick="start"
+            style="@style/Widget.AppCompat.Button.Colored" />
+    </LinearLayout>
+
+</FrameLayout>
